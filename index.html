@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>CoffeeShop</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Ekaterina Vostrikova">
+		<meta name="copyright" content="Ekaterina Vostrikva">
+		<meta name="description" content="Estructura y layout. Etiquetas de sección">
+		<meta name="keywords" content="css">
+		<meta name="date" content="20/01/2024">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
+		<script src="https://kit.fontawesome.com/12c5ff8122.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+<!-- Cabecera y barra de navegación -->
+		<header>
+			<img id="logo" src="images/logo.jpg" alt="logo">
+			<div id="head">
+				<div class="head-top">
+					<p>Cupcake ipsum dolor.</p>
+					<form>
+						<i class="fa-solid fa-magnifying-glass"></i> 
+						&nbsp;
+						<input type="search" id="search" name="search" size="30" placeholder="Buscar en la web">
+					</form>
+				</div>
+				<div class="head-bottom">
+					<nav>
+						<ul>
+							<li><a href="Ejercicio7.3(a).html">Mayoristas &darr;</a></li>
+							<li><a href="Ejercicio7.3(a).html">Alquiler de cafeteras &darr;</a></li>
+							<li><a href="Ejercicio7.3(a).html">Catálogo &darr;</a></li>
+							<li><a href="Ejercicio7.3(a).html">Pago y envío &darr;</a></li>
+							<li><a href="Ejercicio7.3(a).html">FAQ &darr;</a></li>
+						</ul>
+					</nav>
+					<aside>
+						<a href="#contact" class="button"><i class="fa-solid fa-phone"></i> &nbsp;Contactar</a>
+						<a href="#"><i class="fa-regular fa-user"></i></a>
+						<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+					</aside>
+				</div>
+			</div>
+		</header>
+<!-- Parte principal con imagen -->
+		<main>
+			<section class="section-1">
+				<h1>CAFÉS DE ESPECIALIDAD EN GRANO RECIÉN TOSTADO</h1>
+				<br>
+				<p>Cupcake ipsum dolor sit amet cupcake marzipan muffin. Dessert candy icing jelly-o dessert wafer. Sweet roll pudding icing bear claw lollipop oat cake gingerbread. Toffee donut cake marshmallow tart.</p>
+				<br><br>
+	<!-- Botones -->
+					<div class="button">
+						<a href="#">Café en grano</a>
+						<a href="#">Cafeteras</a>
+					</div>
+			</section>
+<!-- Ofertas -->
+			<section class="section-2">
+				<article class="article-1">
+					<h2>Oferta de la semana</h2>
+					<br>
+					<p>Wafer brownie apple pie danish dessert. Icing gummies gummies pastry pudding sweet pie donut bonbon. Liquorice candy icing cheesecake chocolate cake bonbon toffee.</p>
+					<br> <br>
+					<a href="#">Catálogo completo &nbsp;&nbsp;&nbsp;<span style='font-size:40px; vertical-align: sub;'>&#129026;</span></a>
+				</article>
+	<!-- Oferta 1 -->
+				<fieldset class="article-2">
+					<legend>Café 2</legend>
+					<img src="images/cafe.jpg" alt="oferta1">
+					<p>Arábica: 100%</p>
+					<p>Ideal para amantes del café solo</p>
+					<br>
+					<!-- Selector 1 -->
+					<div class="selector">
+						<label for="molido">Molido&nbsp;</label>
+						<select name="molido" id="molido">
+							<option value="grano" selected>Grano</option>
+							<option value="grueso">Grueso</option>
+							<option value="medio">Medio</option>
+							<option value="fino">Fino</option>
+							<option value="muy_fino">Muy fino</option>
+						</select>
+						<!-- Selector 2 -->
+						<label for="number">&nbsp;&nbsp;Cantidad&nbsp;</label>
+						<input type="number" name="number" value="1" min="1" max="10" maxlength="2">
+					</div>
+					<!--Selector 3-->
+					<div class="selector">
+						<div class="option">
+							<p>
+								200 gramos<br>
+								<del>Mucho &euro;</del><br>Poco &euro;
+							</p>
+						</div>
+						<div class="option">
+							<p>
+								1 kg.<br>
+								<del>Mucho &euro;</del><br>Poco &euro;
+							</p>
+						</div>
+						<!-- A comprar -->
+						<button class="buy">Añadir a la cesta</button>
+					</div>
+				</fieldset>
+	<!-- Oferta 2 -->
+				<fieldset class="article-3">
+					<legend>Café 1</legend>
+					<img src="images/cafe.jpg" alt="oferta1">
+					<p>Arábica: 100%</p>
+					<p>Ideal para amantes del café solo</p>
+					<br>
+					<!-- Selector 1 -->
+					<div class="selector">
+						<label for="molido">Molido&nbsp;</label>
+						<select name="molido" id="molido">
+							<option value="grano" selected>Grano</option>
+							<option value="grueso">Grueso</option>
+							<option value="medio">Medio</option>
+							<option value="fino">Fino</option>
+							<option value="muy_fino">Muy fino</option>
+						</select>
+						<!-- Selector 2 -->
+						<label for="number">&nbsp;&nbsp;Cantidad&nbsp;</label>
+						<input type="number" name="number" value="1" min="1" max="10" maxlength="2">
+					</div>
+					<!-- Selector 3 -->
+					<div class="selector">
+						<div class="option">
+							<p>
+								200 gramos<br>
+								<del>Mucho &euro;</del><br>Poco &euro;
+							</p>
+						</div>
+						<div class="option">
+							<p>
+								1 kg.<br>
+								<del>Mucho &euro;</del><br>Poco &euro;
+							</p>
+						</div>
+						<!-- A comprar -->
+						<button class="buy">Añadir a la cesta</button>
+					</div>
+				</fieldset>
+           </section>
+		</main>
+<!-- Pie -->
+		<footer>
+			<div>2024 &emsp;Ekaterina Vostrikova</div>
+			<div>&#9742; &nbsp; 123 456 78 90  <br>
+				<a href="mailto:someone@example.com">&#128386; Enviar un email</a>
+			</div>
+			<div>
+				<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-xl"></i></a> &nbsp; &nbsp; &nbsp;
+				<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-xl"></i></a>
+			</div>
+		</footer> 
+
+	<a href="#" id="contact">
+		<table id="hiddenTable">
+			<tr>
+				<th style="padding-right: 20px;">Llámanos</th>
+				<th>O si lo prefieres</th>
+			</tr>
+			<tr>
+				<td style="padding-right: 20px;">123 456 78 90</td>
+				<td><a href="#form">Te llamamos nosotros</a></td>
+			</tr>
+		</table>
+	</a>   
+<!-- Parte oculta -->
+	<div id="form">
+		<div id="hiddenForm">
+			<a id="close-btn" href="#">&#9932;</a>
+		<p><i>Cupcake ipsum dolor sit amet cupcake marzipan muffin.</i></p>
+		<br>
+    <form>
+		<div><label for="phoneNum"><b>*Número de teléfono:</b></label>
+			<input type="tel" name="phoneNum" id="phoneNum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="123-456-78-90" required>
+		</div>
+
+        <div><label for="email"><b>Correo electrónico:</b></label>
+			<input type="email" name="email" id="email">
+		</div>
+
+		<div><p><b>¿Eres cliente de <i>Coffee Time</i>?</b></p>
+			<label for="client-yes">Sí, soy cliente</label>
+			<input type="radio" name="client" id="client-yes" value="Sí, soy cliente">
+			<label for="client-no">No, todavía no lo soy</label>
+			<input type="radio" name="client" id="client-no" value="No, todavía no lo soy">
+		</div>
+
+		<div><p><b>*¿Eres empresa o particular?</b></p>
+			<input type="text" name="clientType" id="particular" list="clientType" required>
+				<datalist id="clientType">
+					<option value="Particular"></option>
+					<option value="Empresa"></option>  
+				</datalist>
+		</div>
+
+        <div><label for="time"><b>Elige la hora de llamada</b></label>
+			<input type="datetime-local" name="time" id="time"</div>
+        <div><textarea name="comment" id="comment" cols="30" rows="5">Tu comentario</textarea></div>
+		<div><label for="accept">Acepto recibir otras comunicaciones de <i>Coffee time</i>.</label>
+			<input type="checkbox" name="accept" id="accept" checked></div>
+        <div><input type="submit" value="LLAMADME" class="submit-btn"></div>
+    </form> 
+</div>
+</div>
+	</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeShop</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Dr+Sugiyama&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: auto;
+            box-sizing: border-box;
+        }
+        #image {
+            height: 100vh;
+            width: 100vw;
+            background-image: url('images/cup.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            display: table; 
+        }
+        .topLeft {
+            font-family: 'Dr Sugiyama', cursive;
+            font-size: 3em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0 0 20px;
+            color: #44463e;
+            text-shadow: -3px 3px 1px #8fab97;
+        }
+        .middle {
+            display: table-cell;
+            vertical-align: middle;
+            font-family: 'DM Mono', monospace;;
+            font-size: 2em;
+            text-align: center;
+            color: #25530f;
+        }
+        hr {
+            width: 30%;
+            text-align: center;
+        }
+
+@media screen and (max-width: 768px) {
+    #image {
+            background-size: cover;
+        }
+}
+        </style>
+</head>
+<body>
+    <div id="image">
+        <div class="topLeft">
+          <p>Coffee time</p>
+        </div>
+        <div class="middle">
+          <h1>Coming soon</h1>
+          <hr>
+          <progress id="daysLeft" value="4" max="10"> 40% </progress>
+        </div>
+    </div>
+</body>
+</html>
