@@ -1,0 +1,276 @@
+* {
+	margin: auto;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Fauna One', serif;
+	line-height: 1.5em;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+/* =========Cabecera y barra de navegación========= */
+header{
+	width: 100%;
+	display: flex;
+	flex-direction: row ;
+	align-items: baseline;
+}
+#logo {
+	display: block;
+	max-height: 150px;
+	min-height: 100px;
+	padding: 10px;
+}
+#head {
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+}
+#head [class|="head"] {
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+}
+.head-top {
+	height: 35%; 
+}
+.head-bottom {
+	height: 65%;
+}
+.head-top p {
+	width: 70%;
+	text-align: center;
+	font-family: Cinzel, serif;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.head-top form {
+	width: 30%;
+	text-align: right;
+}
+input[type=search] {
+    height: 30px;
+}
+li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+	padding: 10px 0;
+}
+li:hover {
+	font-weight: bold;
+}
+.head-bottom aside {
+	width: 30%;
+	text-align: right;
+}
+aside a {
+	display: inline-block;
+	padding: 10px;
+}
+aside .button, .section-1 a {
+	background-color: whitesmoke;
+	border-radius: 15px;
+	padding: 5px 30px;
+}
+aside .button:hover ,.section-1 a:hover {
+	color: aliceblue;
+	background-color: darkgreen;
+}
+aside .button:active ,.section-1 a:active, article a:hover, article a:active  {
+	font-weight: bold;
+}
+/* ====== Parte principal ====== */
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+main [id|=section] {
+	width: 100%;
+}
+/* ====== Parte principal con imagen ====== */
+.section-1 {
+	background-image: url("images/coffee-tree.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 80vh;
+	width: 100%;
+	padding: 50px 10px;
+	margin-bottom: 40px;
+	text-align: justify;
+}
+.section-1>* {
+	width: 60%;
+}
+
+/* ====== Ofertas ====== */
+.section-2 {
+	display: flex;
+	flex-direction: row;
+	height: 450px;
+}
+[class|="article"] {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+	border-style: none;
+	height: 100%;
+	width: 30%;
+}
+article a {
+	color: darkgreen;
+}
+/* ====== Ofertas - izquierda ====== */
+.article-1 {
+	padding: 20px;
+}
+/* ====== Ofertas - derecha ====== */
+.article-2,.article-3 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+[class|="article"] img {
+	padding: 0;
+	display: block;
+	height: 30vh;
+}
+legend {
+	font-family: Cinzel, serif;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.selector {
+	display: flex;
+	flex-direction: row;
+}
+input[type=number] {
+	width: 50px;
+}
+
+.option, .buy {
+	display: inline-block;
+	height: 85%;
+	width: 35%;
+	padding: 10px 5px;
+	margin: 5px;
+}
+.buy {
+	font-family: 'Fauna One', serif;
+	font-size: 1em;
+	background-color: darkgreen;
+	border-radius: 20px;
+	color: antiquewhite;
+	cursor: pointer;
+}
+.buy:hover {
+	font-weight: bold;
+}
+.option:hover {
+	background-color: #d0f0c0;
+	border-radius: 20px;
+	cursor: pointer;
+}
+/* ====== Pie ====== */
+footer {
+	margin-top: 40px;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	border-top: 2px solid grey;
+}
+footer div {
+	display: inline-block;
+}
+footer, footer a {
+	color: darkgrey;
+}
+/* ====== Ventanas ocultas ====== */
+#contact, #form {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  #hiddenTable {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	margin: auto;
+	padding: 30px;
+	text-align: left;
+	border-radius: 10px;
+	background-color: rgb(201, 214, 208);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #contact:target, #form:target {display: block;}
+  #hiddenTable a:hover {
+	color: #44463e;
+	text-decoration: underline;
+  }
+#hiddenForm {
+	margin: auto;
+	width: 50%;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: justify;
+	padding: 10px 30px;
+	display: flex;
+	flex-direction: column;
+}
+#hiddenForm div {
+	margin: 15px auto;
+}
+#close-btn {
+	padding: 10px;
+	margin: 0 0 15px auto;
+	font-size: 2em;
+}
+.submit-btn {
+	padding: 10px;
+	border-radius: 10px;
+	font-variant: small-caps;
+	border: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.submit-btn:active {
+	box-shadow: none;
+}
+/* ====== Media queries ====== */
+@media screen and (max-width: 768px){
+	header, #head [class|="head"], .section-2, footer {
+		flex-direction: column;
+	}
+	.head-top i {
+		display: none;
+	}
+	aside .button, li, .section-1 a {
+		margin: auto;
+	}
+	.section-1 {
+		padding: 20px 10px;
+		width: 90%;
+		margin: auto;
+	}
+	.section-2 {
+		height: fit-content;
+	}
+	[class|="article"], .head-bottom nav {
+		width: 90%;
+	}
+	#hiddenForm {
+		margin: auto;
+		width: 90%;
+		padding: 10px 20px;
+	}
+	[class|="article"] {
+		height: auto;
+	}
+}
