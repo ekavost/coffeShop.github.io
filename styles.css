@@ -94,7 +94,7 @@ main [id|=section] {
 }
 /* ====== Parte principal con imagen ====== */
 .section-1 {
-	background-image: url("images/coffee-tree.jpg");
+	background-image: url("./coffee-tree.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 80vh;
